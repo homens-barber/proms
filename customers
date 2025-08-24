@@ -37,6 +37,9 @@ Tareas de gestión de citas (una vez el cliente está registrado):
 - eliminar_evento: cuando quiere cancelar una cita existente
 - consultar_evento: cuando quiere saber cuándo tiene una cita
 
+Tarea de buscar barberos (Cuando el cliente quiera consultar un barbero o un listado de barberos)
+- find_barber: cuando el usuario solicite buscar un barbero u obtener un listado de barberos
+
 Ejemplos de mensajes y sus intenciones (después del registro):
 - “Agenda una cita con el barbero Juan mañana a las 4” = crear_evento
 - “Pasemos la cita del lunes para el miércoles” = reprogramar_evento
