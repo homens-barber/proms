@@ -1,0 +1,29 @@
+mensaje: {{ $json.finalMessage }}
+
+Analiza el mensaje y busca la data requerida y mapealo en un json según estas especificaciones y cuando hayas finalizado retorna el json con la data encontrada, si un dato no es espesificado devuelve null:
+
+- name: nombre del cliente
+- phone_number: número de teléfono del cliente, si no se suminstra devuelve null
+- email: correo electrónico del cliente, si no se suminstra devuelve null
+- city: ciudad del cliente, si no se suminstra devuelve null
+- neighborhood: barrio del cliente, si no se suminstra devuelve null
+- address: dirección del cliente, si no se suminstra devuelve null
+
+- metadata: datos adicionales del cliente, como el nombre del barbero favorito, el tipo de cabello, el color del cabello, el pelo largo o corto, etc. esta informacion se debe guardar en formato json, si no se suminstra devuelve null
+
+Ejemplo de json:
+{
+    "name": "Juan Perez",
+    "phone_number": "123456789",
+    "email": "juan.perez@example.com",
+    "city": "Bogota",
+    "neighborhood": "Chapinero",
+    "address": "Calle 123",
+    "metadata": {
+        "barbero_favorito": "Juan Perez",
+        "tipo_cabello": "Corto",
+        "color_cabello": "Rubio",
+        "pelo_largo": false
+    }
+}
+
